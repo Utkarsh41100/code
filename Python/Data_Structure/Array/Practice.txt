@@ -1,0 +1,30 @@
+Array and List Problems:
+Sum of Elements:
+Write a function to calculate the sum of all elements in an array.
+
+Maximum Element:
+Write a function to find the maximum element in an array.
+
+Array Rotation:
+Given an array, rotate it to the right by k steps. For example, if the array is [1, 2, 3, 4, 5] and k is 2, the array should become [4, 5, 1, 2, 3].
+
+Remove Duplicates:
+Write a function to remove duplicates from an  array in-place such that each element appears only once and returns the new length.
+
+Merge Sorted Arrays:
+Given two sorted arrays, merge them into a single sorted array.
+
+Search in Rotated Sorted Array:
+Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand. Write a function to determine if a target value is in the array.
+
+Missing Number:
+Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.
+
+Product of Array Except Self:
+Given an array nums of n integers where n > 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
+
+Sort Colors:
+Given an array with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+
+Kth Largest Element:
+Find the kth largest element in an unsorted array.Array and List Problems:

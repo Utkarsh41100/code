@@ -1,0 +1,10 @@
+Create a Python class called Rectangle with attributes length and width, and methods to calculate its area and perimeter.
+Create a class called Employee with attributes name, salary, and designation. Implement a method display_details to display all the details of an employee.
+Create a class Circle with attribute radius and methods to calculate its area and circumference.
+Implement a class Car with attributes make, model, and year, and methods to display car details and calculate the age of the car.
+Create a class Student with attributes name, roll_number, and marks. Implement methods to display student details and calculate the grade based on marks.
+Design a class BankAccount with attributes account_number, account_holder_name, and balance. Implement methods to deposit, withdraw, and display account details.name
+Create a class Triangle with attributes side1, side2, and side3, and methods to check if it forms a valid triangle and calculate its area.
+Implement a class Book with attributes title, author, and price, and methods to display book details and apply a discount.
+Design a class Stock with attributes symbol, company_name, and current_price. Implement a method to calculate the change in price percentage.
+Create a class EmployeeDatabase with a class attribute employees as an empty list. Implement methods to add an employee, remove an employee, and display all employees' details.
