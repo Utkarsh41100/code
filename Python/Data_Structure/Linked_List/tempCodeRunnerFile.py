@@ -1,1 +1,2 @@
-first.deleteatindex(2)
+first.display()   
+# second.display()
