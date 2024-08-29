@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Churn Prediction</title>
+</head>
+<body>
+    <h2>Customer Churn Prediction</h2>
+    <form action="/predict" method="post">
+        <label for="gender">Gender:</label><br>
+        <input type="text" id="gender" name="gender" required><br>
+        
+        <label for="SeniorCitizen">Senior Citizen (1 for Yes, 0 for No):</label><br>
+        <input type="number" id="SeniorCitizen" name="SeniorCitizen" required><br>
+        
+        <label for="Partner">Partner (Yes/No):</label><br>
+        <input type="text" id="Partner" name="Partner" required><br>
+        
+        <label for="Dependents">Dependents (Yes/No):</label><br>
+        <input type="text" id="Dependents" name="Dependents" required><br>
+        
+        <label for="tenure">Tenure (in months):</label><br>
+        <input type="number" id="tenure" name="tenure" required><br>
+        
+        <label for="PhoneService">Phone Service (Yes/No):</label><br>
+        <input type="text" id="PhoneService" name="PhoneService" required><br>
+        
+        <label for="MultipleLines">Multiple Lines (Yes/No/No phone service):</label><br>
+        <input type="text" id="MultipleLines" name="MultipleLines" required><br>
+        
+        <label for="InternetService">Internet Service (DSL/Fiber optic/No):</label><br>
+        <input type="text" id="InternetService" name="InternetService" required><br>
+        
+        <label for="OnlineSecurity">Online Security (Yes/No/No internet service):</label><br>
+        <input type="text" id="OnlineSecurity" name="OnlineSecurity" required><br>
+        
+        <label for="OnlineBackup">Online Backup (Yes/No/No internet service):</label><br>
+        <input type="text" id="OnlineBackup" name="OnlineBackup" required><br>
+        
+        <label for="DeviceProtection">Device Protection (Yes/No/No internet service):</label><br>
+        <input type="text" id="DeviceProtection" name="DeviceProtection" required><br>
+        
+        <label for="TechSupport">Tech Support (Yes/No/No internet service):</label><br>
+        <input type="text" id="TechSupport" name="TechSupport" required><br>
+        
+        <label for="StreamingTV">Streaming TV (Yes/No/No internet service):</label><br>
+        <input type="text" id="StreamingTV" name="StreamingTV" required><br>
+        
+        <label for="StreamingMovies">Streaming Movies (Yes/No/No internet service):</label><br>
+        <input type="text" id="StreamingMovies" name="StreamingMovies" required><br>
+        
+        <label for="Contract">Contract (Month-to-month/One year/Two year):</label><br>
+        <input type="text" id="Contract" name="Contract" required><br>
+        
+        <label for="PaperlessBilling">Paperless Billing (Yes/No):</label><br>
+        <input type="text" id="PaperlessBilling" name="PaperlessBilling" required><br>
+        
+        <label for="PaymentMethod">Payment Method (Electronic check/Mailed check/Bank transfer/Direct debit):</label><br>
+        <input type="text" id="PaymentMethod" name="PaymentMethod" required><br>
+        
+        <label for="MonthlyCharges">Monthly Charges:</label><br>
+        <input type="number" step="0.01" id="MonthlyCharges" name="MonthlyCharges" required><br>
+        
+        <label for="TotalCharges">Total Charges:</label><br>
+        <input type="number" step="0.01" id="TotalCharges" name="TotalCharges" required><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+    
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>

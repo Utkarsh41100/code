@@ -12,8 +12,8 @@ def checkwin(player, comp):
     elif comp == "w":
         if player == "g":
             print("You Lose")
-        elif player == "s":
-            print("You Win")
+        elif player == "s":ṇ
+        print("You Win")
     elif comp == "g":
         if player == "s":
             print("You Lose")
