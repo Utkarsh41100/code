@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
+AUTH_USER_MODEL = 'user_management.CustomUser' # manually added
 
 from pathlib import Path
 
@@ -33,6 +34,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'user_management', 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,15 +79,10 @@ WSGI_APPLICATION = 'library_management_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Library_Database',      # Replace with your actual database name
-        'USER': 'root',                    # Your MySQL username
-        'PASSWORD': 'Utkarsh2411',         # Your MySQL password
-        'HOST': 'localhost',               # If your MySQL is hosted locally
-        'PORT': '3306',                    # MySQL's default port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 
 # Password validation
